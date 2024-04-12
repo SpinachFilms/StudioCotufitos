@@ -1,0 +1,262 @@
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --grey-color: #D1D5DB;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn{
+    color:rgb(144, 143, 143)
+}
+
+.wrapper{
+    max-width: 1781px;
+    margin: 0;
+    padding: 10px;
+}
+
+header{
+    background: var(--white-color);
+   position: fixed;
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 95%;
+    min-width: 200px;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: var(--black-color) 2px solid;
+    margin: 0px 0px 0px 20px; 
+    padding: 5px 80px 5px 80px;  
+    background-color: var(--white-color)
+}
+
+.nav .navleft {
+    display: flex;
+    align-items: center;
+    margin: 150px;
+}
+
+.nav .navcenter {
+    flex-grow: 1; 
+    text-align: center; 
+}
+    
+.nav .navright {
+    display: flex;
+    align-items: center;
+}
+
+.slide1{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.slide1 .center{
+    display: flex;
+    content: url('/images/Artframes.png');
+    height: 70%;
+    width: 60%;
+    margin-left: 200px;
+}
+
+.slide1 .left{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 30px 30px;
+    color: var(--black, #000);
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 16px;
+    font-style: none;
+}
+
+.slide1 .left h1{
+    color: var(--black, #000);
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.slide1 .left h2{
+    display: flex;
+    color:var(--grey-color);
+    margin-left: 250px;
+}
+
+.slide1 .rightFloatingBar{
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: 20%;
+    min-width: 200px;
+    z-index: 1000;
+    border-left: var(--black-color) 2px solid;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.slide2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 700px 0px 0px;
+}
+
+.divleft{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+.divright{
+    display: flex;
+    flex-direction: column;
+}
+
+.spinachClothing .img{
+    height: 100%;
+    min-width: 200px;
+}
+
+.flowers{
+    order: 1;
+    height: 100%;
+    min-width: 200px;
+    text-align: right;
+}
+
+.SALE{
+    order:2;
+    height: 100%;
+    min-width: 200px;
+}
+
+
+.slide3{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    color: -#D1D5DB;
+    font-family: "Roboto";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.piedepagina{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: var(--grey-color);
+    max-width: 70%;
+    border-radius: 15px;
+    margin-left: 100px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.catalog{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 100px;
+    align-content: space-around;
+}
+
+.leftcatalog{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftProduct{
+    display: flex;
+    padding-left: 180px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftProduct2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 100px;
+    align-content: space-around;
+}
+
+.centerProduct{
+    display: flex;
+    padding-left: 180px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightProduct{
+    display: flex;
+    padding-left: 180px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightcatalog .rightFloatingBar{
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: 20%;
+    min-width: 200px;
+    z-index: 1000;
+    border-left: var(--black-color) 2px solid;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.slide3 .h1{
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--grey-color);
+}
