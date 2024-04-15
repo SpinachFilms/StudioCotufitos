@@ -22,4 +22,3 @@ closeIcon.addEventListener("click", () =>{
     menuContainer.classList.remove("active");
 });
 
-

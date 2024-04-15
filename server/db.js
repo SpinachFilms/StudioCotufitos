@@ -3,6 +3,8 @@ const uuid = require('uuid');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const JWT = process.env.JWT || 'shhh';
+const { authenticate, findUserWithToken } = require('./db.js');
+
 
 const client = new pg.Client(process.env.DATABASE_URL || 'postgresql:spinach:1234@localhost:1234/ho_studio')
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href = '/style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <header>
+            <div class="wrapper">      
+              <nav>
+                <div class="navleft">
+                    <div class="menuIcon">
+                        <img src="/images/MenuVector.png" alt="menuVector"/> 
+                    </div>        
+                    <div class="menuContainer">
+                      <div class="closeIcon">
+                        <img src="/images/CloseVector.png" alt="closeVector"/>
+                      </div>  
+                      <ul>
+                      <li><a href="/Pages/newArrivals.html">Shop</a></li>
+                      <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
+                      <li><a href="/Pages/artframes.html">Artframes</a></li>
+                      <li><a href="/Pages/flowers.html">Flowers</a></li>
+                      <li><a href="spinachClothing.html">Spinach Clothing</a></li>
+                      <li><a href="/Pages/sales.html">SALE</a></li>
+                      <li>-----------</li>
+                      <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
+                      <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                
+                <div class="navcenter">
+                  <div class="logo"><a href='/Pages/index.html'>HO Studio</a></div>
+                </div>
+        
+                <div class="navright">
+                    <div class="cartIcon">
+                        <img src="/images/CartVector.png" alt="CartVector"/>         
+                    <div class="cartContainer"></div>
+                    
+                       
+                      </div>  
+                      
+                     
+                    </div>
+                </div>
+              </nav>
+        </header>
+    </head>
+<body>
+    <div class="wrapper">
+    <div class="login-container">
+        <form id="login-form">
+          <h2>Login</h2>
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <a href="">Forgot your password?</a>
+          </div>
+          <button type="submit">Login</button>
+          <p class="error-message" id="error-message"></p>
+          <p>Not a user yet? Register by clicking <a href="register.html">here</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
