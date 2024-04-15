@@ -5,7 +5,6 @@ const cartIcon = document.querySelector("cartIcon");
 const cart = document.querySelector(".cart");
 const closeIcon = document.querySelector(".menuContainer .closeIcon");
 
-
 window.addEventListener("scroll", () => {
     if (window.scrollY > 30) {
         nav.classList.add("scrolled");

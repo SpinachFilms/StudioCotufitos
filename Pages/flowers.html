@@ -48,38 +48,11 @@
                 </div>
               </nav>
     </header>
+    
 </head>
 <body>
-    <div class="catalog">
-        <div class="leftcatalog">
-        <div class="leftProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        <div class="centerProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        <div class="rightProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        <div class="leftProduct2">
-        <div class="leftProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        <div class="centerProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        <div class="rightProduct"><img src="/images/BannerPromo.png"/>
-            <p>Product Name</p>
-            <p>Price:</p>
-        </div>
-        </div>
-        </div>
-        <div class="rightcatalog">
+    <div id="product-list-container"></div>
+            <div class="rightcatalog">
             <div class="rightFloatingBar">
                 <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
                 <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
@@ -91,11 +64,13 @@
                 <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
             </div>
         </div>
-    </div>
 
-</div>
-
-    </div>
-    <script src="/main.jsx"></script>
+    <script src="/productlist.jsx"></script>
+    
+    <script>
+        ReactDOM.render(
+        React.createElement(ProductList),
+        document.getElementById('product-list-container')
+    );</script>
 </body>
 </html>

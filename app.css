@@ -1,0 +1,27 @@
+.product-list {
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product h2 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    margin: 5px 0;
+  }
+  
