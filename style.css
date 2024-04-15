@@ -69,7 +69,6 @@ nav{
     margin: 0px 0px 0px 20px; 
     padding: 5px 80px 5px 80px;  
     transition: all 500ms ease;
-    background-color: var(--white-color);
 }
 
 nav.scrolled{
