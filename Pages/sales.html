@@ -2,100 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href = '/style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALE</title>
-    <header>
-        <div class="wrapper">      
-            <nav>
-                <div class="navleft">
-                    <div class="menuIcon">
-                        <img src="/images/MenuVector.png" alt="menuVector"/> 
-                    </div>        
-                    <div class="menuContainer">
-                      <div class="closeIcon">
-                        <img src="/images/CloseVector.png" alt="closeVector"/>
-                      </div>  
-                      <ul>
-                      <li><a href="/Pages/newArrivals.html">Shop</a></li>
-                      <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
-                      <li><a href="/Pages/artframes.html">Artframes</a></li>
-                      <li><a href="/Pages/flowers.html">Flowers</a></li>
-                      <li><a href="spinachClothing.html">Spinach Clothing</a></li>
-                      <li><a href="/Pages/sales.html">SALE</a></li>
-                      <li>-----------</li>
-                      <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
-                      <li><a href="">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    
-                  </div>
-                
-                <div class="navcenter">
-                    <div class="logo"><a href='../index.html'>HO Studio</a></div>
-                </div>
-        
-                <div class="navright">
-                    <div class="cartIcon">
-                        <img src="/images/CartVector.png" alt="CartVector"/>         
-                    <div class="cartContainer"></div>
-                    
-                       
-                      </div>  
-                      
-                     
-                    </div>
-                </div>
-              </nav>
-    </header>
+    <link rel="stylesheet" href="/catalog.css">
+    <title>Flowers</title>
+    
 </head>
 <body>
-    <div class="catalog">
-        <div class="leftcatalog">
-        <div class="leftProduct"><img src="/images/SaleProducts/Sale1.jpeg"/>
-            <p>Personalized Mug</p>
-            <p>Price: 15$</p>
+    <header>
+        <nav>
+            <div class="navleft">
+        <div class="menuIcon">
+            <img src="/images/MenuVector.png" alt="menuVector"/>
         </div>
-        <div class="centerProduct"><img src="/images/SaleProducts/Sale2.jpeg"/>
-            <p>Magazine Cover</p>
-            <p>Price: 10$</p>
+    </div>
+    <div class="navcenter">
+        <div class="logo">HO Studio</div>
+    </div>
+
+    
+    <div class="navright">
+        <div class="cartIcon">
+        <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+        <div class="count-products">
+            <span id="contador-">0</span>
         </div>
-        <div class="rightProduct"><img src="/images/SaleProducts/Sale3.jpeg"/>
-            <p>Personalized Book Front</p>
-            <p>Price: 15$</p>
-        </div>
-        <div class="leftProduct2">
-        <div class="leftProduct"><img src="/images/SaleProducts/Sale4.jpeg"/>
-            <p>Personalized Cup</p>
-            <p>Price: 15$</p>
-        </div>
-        <div class="centerProduct"><img src="/images/SaleProducts/Sale5.jpeg"/>
-            <p>Personalized drops jar</p>
-            <p>Price: 15$</p>
-        </div>
-        <div class="rightProduct"><img src="/images/SaleProducts/Sale6.jpeg"/>
-            <p>Personalized Mat</p>
-            <p>Price: 20$</p>
-        </div>
-        </div>
-        </div>
-        <div class="rightcatalog">
-            <div class="rightFloatingBar">
-                <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
-                <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
-                <h3><a href="/Pages/artframes.html">Artframes</a></h3>
-                <h3><a href="/Pages/flowers.html">Flowers</a></h3>
-                <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
-                <h3><a href="/Pages/sales.html">SALE</a></h3>
-                <p>-----------</p>
-                <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+        <div class="container-cart-products
+        hidden-cart">
+            <div class="cart-product">
+                <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">1</span>
+                    <p class ="titulo-producto-carrito">White Tulips</p>
+                    <span class="precio-producto-carrito">50$</span>
+                    <img class="icon-close" src="/images/CloseVector.png" alt="CloseVector"/>
+                </div>
+                
+            </div>
+            <div class="cart-total">
+                <h3>Total:</h3>
+                <span class="total-pagar">200</span>
             </div>
         </div>
+        </div>
     </div>
+    </nav>
+     </header>
 
-</div>
-
+     <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale1.jpeg" alt="Sale1">
+            </figure>
+            <div class="info-product">
+                <h2>Personalized Cup</h2>
+                <p2>Price: 25$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale2.jpeg" alt="Sale2">
+            </figure>
+            <div class="info-product">
+                <h2>Magazine Cover</h2>
+                <p2>Price: 15$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale3.jpeg" alt="Sale3">
+            </figure>
+            <div class="info-product">
+                <h2>Personalized Books</h2>
+                <p2>Price: 15$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale4.jpeg" alt="Sale4">
+            </figure>
+            <div class="info-product">
+                <h2>Personalized Mug</h2>
+                <p2>Price: 25$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale5.jpeg" alt="Sale5">
+            </figure>
+            <div class="info-product">
+                <h2>Personalized Drops</h2>
+                <p2>Price: 25$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/SaleProducts/Sale6.jpeg" alt="Sale6">
+            </figure>
+            <div class="info-product">
+                <h2>Personalized Rug</h2>
+                <p2>Price: 40$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div>
+     </div>
+     <div class="rightcatalog">
+        <div class="rightFloatingBar">
+            <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
+            <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+            <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+            <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+            <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+            <h3><a href="/Pages/sales.html">SALE</a></h3>
+            <p>-----------</p>
+            <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+        </div>
     </div>
-    <script src="/main.jsx"></script>
+    <script src="/flowers.js"></script>
 </body>
 </html>

@@ -2,75 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href = '/style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/catalog.css">
     <title>Flowers</title>
-    <header>
-        <div class="wrapper">      
-            <nav>
-                <div class="navleft">
-                    <div class="menuIcon">
-                        <img src="/images/MenuVector.png" alt="menuVector"/> 
-                    </div>        
-                    <div class="menuContainer">
-                      <div class="closeIcon">
-                        <img src="/images/CloseVector.png" alt="closeVector"/>
-                      </div>  
-                      <ul>
-                      <li><a href="/Pages/newArrivals.html">Shop</a></li>
-                      <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
-                      <li><a href="/Pages/artframes.html">Artframes</a></li>
-                      <li><a href="/Pages/flowers.html">Flowers</a></li>
-                      <li><a href="spinachClothing.html">Spinach Clothing</a></li>
-                      <li><a href="/Pages/sales.html">SALE</a></li>
-                      <li>-----------</li>
-                      <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
-                      <li><a href="">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    
-                  </div>
-                
-                <div class="navcenter">
-                    <div class="logo"><a href='../index.html'>HO Studio</a></div>
-                </div>
-        
-                <div class="navright">
-                    <div class="cartIcon">
-                        <img src="/images/CartVector.png" alt="CartVector"/>         
-                    <div class="cartContainer"></div>
-                    
-                       
-                      </div>  
-                      
-                     
-                    </div>
-                </div>
-              </nav>
-    </header>
     
 </head>
 <body>
-    <div id="product-list-container"></div>
-            <div class="rightcatalog">
-            <div class="rightFloatingBar">
-                <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
-                <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
-                <h3><a href="/Pages/artframes.html">Artframes</a></h3>
-                <h3><a href="/Pages/flowers.html">Flowers</a></h3>
-                <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
-                <h3><a href="/Pages/sales.html">SALE</a></h3>
-                <p>-----------</p>
-                <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+    <header>
+        <nav>
+            <div class="navleft">
+        <div class="menuIcon">
+            <img src="/images/MenuVector.png" alt="menuVector"/>
+        </div>
+    </div>
+    <div class="navcenter">
+        <div class="logo">HO Studio</div>
+    </div>
+
+    
+    <div class="navright">
+        <div class="cartIcon">
+        <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+        <div class="count-products">
+            <span id="contador-">0</span>
+        </div>
+        <div class="container-cart-products
+        hidden-cart">
+            <div class="cart-product">
+                <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">1</span>
+                    <p class ="titulo-producto-carrito">White Tulips</p>
+                    <span class="precio-producto-carrito">50$</span>
+                    <img class="icon-close" src="/images/CloseVector.png" alt="CloseVector"/>
+                </div>
+                
+            </div>
+            <div class="cart-total">
+                <h3>Total:</h3>
+                <span class="total-pagar">200</span>
             </div>
         </div>
+        </div>
+    </div>
+    </nav>
+     </header>
 
-    <script src="/productlist.jsx"></script>
-    
-    <script>
-        ReactDOM.render(
-        React.createElement(ProductList),
-        document.getElementById('product-list-container')
-    );</script>
+     <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower1.jpeg" alt="Flower1">
+            </figure>
+            <div class="info-product">
+                <h2>White Tulips</h2>
+                <p2>Price: 50$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower2.jpeg" alt="Flower2">
+            </figure>
+            <div class="info-product">
+                <h2>Yellow Roses</h2>
+                <p2>Price: 150$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower3.jpeg" alt="Flower3">
+            </figure>
+            <div class="info-product">
+                <h2>Decorative SunF</h2>
+                <p2>Price: 5$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower4.jpeg" alt="Flower4">
+            </figure>
+            <div class="info-product">
+                <h2>Elegance</h2>
+                <p2>Price: 125$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower5.jpeg" alt="Flower5">
+            </figure>
+            <div class="info-product">
+                <h2>Picnic for two</h2>
+                <p2>Price: 55$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/FlowerProducts/Flower6.jpeg" alt="Flower6">
+            </figure>
+            <div class="info-product">
+                <h2>Field home</h2>
+                <p2>Price: 60$</p2>
+                <button>Add to cart</button>
+            </div>
+        </div>
+     </div>
+     <div class="rightcatalog">
+        <div class="rightFloatingBar">
+            <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
+            <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+            <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+            <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+            <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+            <h3><a href="/Pages/sales.html">SALE</a></h3>
+            <p>-----------</p>
+            <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+        </div>
+    </div>
+    <script src="/flowers.js"></script>
 </body>
 </html>
