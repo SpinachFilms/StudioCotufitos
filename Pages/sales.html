@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/catalog.css">
-    <title>Flowers</title>
+    <title>Sale</title>
     
 </head>
 <body>
@@ -12,34 +12,49 @@
         <nav>
             <div class="navleft">
         <div class="menuIcon">
-            <img src="/images/MenuVector.png" alt="menuVector"/>
+            <div class="container-menu-icon">
+                <img src="/images/MenuVector.png" alt="menuVector"/>
+            </div>
+            <div class="container-menu-list hidden-menu">
+                <h3>Shop</h3>
+                <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+                <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+                <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+                <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+                <h3><a href="/Pages/sales.html">SALE</a></h3>
+            </div>
         </div>
     </div>
     <div class="navcenter">
-        <div class="logo">HO Studio</div>
+        <div class="logo"><a href="/index.html">HO Studio</a></div>
     </div>
 
     
     <div class="navright">
         <div class="cartIcon">
-        <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+            <div class="container-cart-icon">
+                <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
         <div class="count-products">
-            <span id="contador-">0</span>
+            <span id="contador-productos">0</span>
         </div>
-        <div class="container-cart-products
-        hidden-cart">
+            </div>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+        <div class="container-cart-products   hidden-cart">
+            <div class="row-product">
             <div class="cart-product">
                 <div class="info-cart-product">
-                    <span class="cantidad-producto-carrito">1</span>
-                    <p class ="titulo-producto-carrito">White Tulips</p>
-                    <span class="precio-producto-carrito">50$</span>
-                    <img class="icon-close" src="/images/CloseVector.png" alt="CloseVector"/>
+                    <span class="cantidad-producto-carrito">Your</span>
+                    <p class ="titulo-producto-carrito">Cart</p>
+                    <span class="precio-producto-carrito">It's</span>
+                    <p>Empty</p>
                 </div>
-                
+            </div>
             </div>
             <div class="cart-total">
-                <h3>Total:</h3>
-                <span class="total-pagar">200</span>
+                <h3>Total</h3>
+                <span class="total-pagar">$0</span>
             </div>
         </div>
         </div>
@@ -54,8 +69,8 @@
             </figure>
             <div class="info-product">
                 <h2>Personalized Cup</h2>
-                <p2>Price: 25$</p2>
-                <button>Add to cart</button>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div>
         <div class="item">
@@ -64,17 +79,17 @@
             </figure>
             <div class="info-product">
                 <h2>Magazine Cover</h2>
-                <p2>Price: 15$</p2>
-                <button>Add to cart</button>
+                <p>$15</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div><div class="item">
             <figure>
                 <img src="/images/SaleProducts/Sale3.jpeg" alt="Sale3">
             </figure>
             <div class="info-product">
-                <h2>Personalized Books</h2>
-                <p2>Price: 15$</p2>
-                <button>Add to cart</button>
+                <h2>Book Cover</h2>
+                <p>$15</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div><div class="item">
             <figure>
@@ -82,17 +97,17 @@
             </figure>
             <div class="info-product">
                 <h2>Personalized Mug</h2>
-                <p2>Price: 25$</p2>
-                <button>Add to cart</button>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div><div class="item">
             <figure>
                 <img src="/images/SaleProducts/Sale5.jpeg" alt="Sale5">
             </figure>
             <div class="info-product">
-                <h2>Personalized Drops</h2>
-                <p2>Price: 25$</p2>
-                <button>Add to cart</button>
+                <h2>Count Drops</h2>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div><div class="item">
             <figure>
@@ -100,14 +115,14 @@
             </figure>
             <div class="info-product">
                 <h2>Personalized Rug</h2>
-                <p2>Price: 40$</p2>
-                <button>Add to cart</button>
+                <p>$40</p>
+                <button class="btn-add-cart">Add to cart</button>
             </div>
         </div>
      </div>
      <div class="rightcatalog">
         <div class="rightFloatingBar">
-            <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
+            <h3>Shop</h3>
             <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
             <h3><a href="/Pages/artframes.html">Artframes</a></h3>
             <h3><a href="/Pages/flowers.html">Flowers</a></h3>
@@ -117,6 +132,6 @@
             <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
         </div>
     </div>
-    <script src="/flowers.js"></script>
+    <script src="../components/cart.js"></script>
 </body>
 </html>

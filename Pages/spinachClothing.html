@@ -2,100 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href = '/style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/catalog.css">
     <title>SpinachClothing</title>
-    <header>
-        <div class="wrapper">      
-            <nav>
-                <div class="navleft">
-                    <div class="menuIcon">
-                        <img src="/images/MenuVector.png" alt="menuVector"/> 
-                    </div>        
-                    <div class="menuContainer">
-                      <div class="closeIcon">
-                        <img src="/images/CloseVector.png" alt="closeVector"/>
-                      </div>  
-                      <ul>
-                      <li><a href="/Pages/newArrivals.html">Shop</a></li>
-                      <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
-                      <li><a href="/Pages/artframes.html">Artframes</a></li>
-                      <li><a href="/Pages/flowers.html">Flowers</a></li>
-                      <li><a href="spinachClothing.html">Spinach Clothing</a></li>
-                      <li><a href="/Pages/sales.html">SALE</a></li>
-                      <li>-----------</li>
-                      <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
-                      <li><a href="">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    
-                  </div>
-                
-                <div class="navcenter">
-                    <div class="logo"><a href='../index.html'>HO Studio</a></div>
-                </div>
-        
-                <div class="navright">
-                    <div class="cartIcon">
-                        <img src="/images/CartVector.png" alt="CartVector"/>         
-                    <div class="cartContainer"></div>
-                    
-                       
-                      </div>  
-                      
-                     
-                    </div>
-                </div>
-              </nav>
-    </header>
+    
 </head>
 <body>
-    <div class="catalog">
-        <div class="leftcatalog">
-        <div class="leftProduct"><img src="/images/ClotheProducts/Clothe3.jpeg"/>
-            <p>Hoop Up Sweater</p>
-            <p>Price: 50$</p>
-        </div>
-        <div class="centerProduct"><img src="/images/ClotheProducts/Clothe7.jpeg"/>
-            <p>HangOut Camera</p>
-            <p>Price: 75$</p>
-        </div>
-        <div class="rightProduct"><img src="/images/ClotheProducts/Clothe9.jpeg"/>
-            <p>Skateboard T-Shirt</p>
-            <p>Price: 30$</p>
-        </div>
-        <div class="leftProduct2">
-        <div class="leftProduct"><img src="/images/ClotheProducts/Clothe8.jpeg"/>
-            <p>Spinach Hoodie</p>
-            <p>Price: 75$</p>
-        </div>
-        <div class="centerProduct"><img src="/images/ClotheProducts/Clothe11.jpeg"/>
-            <p>Focal Point T-Shirt</p>
-            <p>Price: 30$</p>
-        </div>
-        <div class="rightProduct"><img src="/images/ClotheProducts/Clothe4.jpeg"/>
-            <p>Polaroid Sweater</p>
-            <p>Price: 50$</p>
-        </div>
-        </div>
-        </div>
-        <div class="rightcatalog">
-            <div class="rightFloatingBar">
-                <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
+    <header>
+        <nav>
+            <div class="navleft">
+        <div class="menuIcon">
+            <div class="container-menu-icon">
+                <img src="/images/MenuVector.png" alt="menuVector"/>
+            </div>
+            <div class="container-menu-list hidden-menu">
+                <h3>Shop</h3>
                 <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
                 <h3><a href="/Pages/artframes.html">Artframes</a></h3>
                 <h3><a href="/Pages/flowers.html">Flowers</a></h3>
                 <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
                 <h3><a href="/Pages/sales.html">SALE</a></h3>
-                <p>-----------</p>
-                <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
             </div>
         </div>
     </div>
-
-</div>
-
+    <div class="navcenter">
+        <div class="logo"><a href="/index.html">HO Studio</a></div>
     </div>
-    <script src="/main.jsx"></script>
+
+    
+    <div class="navright">
+        <div class="cartIcon">
+            <div class="container-cart-icon">
+                <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+            </div>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+        <div class="container-cart-products   hidden-cart">
+            <div class="row-product">
+            <div class="cart-product">
+                <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">Your</span>
+                    <p class ="titulo-producto-carrito">Cart</p>
+                    <span class="precio-producto-carrito">It's</span>
+                    <p>Empty</p>
+                </div>
+            </div>
+            </div>
+            <div class="cart-total">
+                <h3>Total</h3>
+                <span class="total-pagar">$0</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </nav>
+     </header>
+
+     <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe1.jpeg" alt="Clothe1">
+            </figure>
+            <div class="info-product">
+                <h2>Surf Sweater</h2>
+                <p>$50</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe11.jpeg" alt="Clothe11">
+            </figure>
+            <div class="info-product">
+                <h2>Focal T-Shirt</h2>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe6.jpeg" alt="Clothe6">
+            </figure>
+            <div class="info-product">
+                <h2>TennisCourt Hoodie</h2>
+                <p>$75</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe9.jpeg" alt="Clothe9">
+            </figure>
+            <div class="info-product">
+                <h2>Skate T-Shirt</h2>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe10.jpeg" alt="Clothe10">
+            </figure>
+            <div class="info-product">
+                <h2>Old Camera T-shirt</h2>
+                <p>$25</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ClotheProducts/Clothe4.jpeg" alt="Clothe4">
+            </figure>
+            <div class="info-product">
+                <h2>Polaroid Sweater</h2>
+                <p>$50</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div>
+     </div>
+     <div class="rightcatalog">
+        <div class="rightFloatingBar">
+            <h3>Shop</h3>
+            <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+            <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+            <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+            <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+            <h3><a href="/Pages/sales.html">SALE</a></h3>
+            <p>-----------</p>
+            <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+        </div>
+    </div>
+    <script src="../components/cart.js"></script>
 </body>
 </html>

@@ -2,106 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equip="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href = '/style.css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/catalog.css">
     <title>Artframes</title>
-    <header>
-        <div class="wrapper">      
-            <nav>
-                <div class="navleft">
-                    <div class="menuIcon">
-                        <img src="/images/MenuVector.png" alt="menuVector"/> 
-                    </div>        
-                    <div class="menuContainer">
-                      <div class="closeIcon">
-                        <img src="/images/CloseVector.png" alt="closeVector"/>
-                      </div>  
-                      <ul>
-                      <li><a href="/Pages/newArrivals.html">Shop</a></li>
-                      <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
-                      <li><a href="/Pages/artframes.html">Artframes</a></li>
-                      <li><a href="/Pages/flowers.html">Flowers</a></li>
-                      <li><a href="spinachClothing.html">Spinach Clothing</a></li>
-                      <li><a href="/Pages/sales.html">SALE</a></li>
-                      <li>-----------</li>
-                      <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
-                      <li><a href="">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    
-                  </div>
-                
-                <div class="navcenter">
-                    <div class="logo"><a href='../index.html'>HO Studio</a></div>
-                </div>
-        
-                <div class="navright">
-                    <div class="cartIcon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                          </svg>
-                          
-                          
-                                   
-                    <div class="cartContainer"></div>
-                    
-                       
-                      </div>  
-                      
-                     
-                    </div>
-                </div>
-              </nav>
-    </header>
+    
 </head>
 <body>
-    <div class="catalog">
-        <div class="leftcatalog">
-        <div class="leftProduct"><img src="/images/ArtframeProducts/Artframe1.jpeg"/>
-            <p>The Base Gardening</p>
-            <p>Price: 60$</p>
-        </div>
-        <div class="centerProduct"><img src="/images/ArtframeProducts/Artframe2.jpeg"/>
-            <p>PinkyRed in the Dark</p>
-            <p>Price: 100$</p>
-        </div>
-        <div class="rightProduct"><img src="/images/ArtframeProducts/Artframe3.jpeg"/>
-            <p>Cascades in the City</p>
-            <p>Price: 45$</p>
-        </div>
-        <div class="leftProduct2">
-        <div class="leftProduct"><img src="/images/ArtframeProducts/Artframe4.jpeg"/>
-            <p>The Base Geisha</p>
-            <p>Price: 120$</p>
-        </div>
-        <div class="centerProduct"><img src="/images//ArtframeProducts/Artframe5.jpeg"/>
-            <p>Neiborhood in childhood</p>
-            <p>Price: 70$</p>
-        </div>
-        <div class="rightProduct"><img src="/images/ArtframeProducts/Artframe6.jpeg"/>
-            <p>MangoPeach</p>
-            <p>Price: 20$</p>
-        </div>
-        </div>
-        </div>
-        <div class="rightcatalog">
-            <div class="rightFloatingBar">
-                <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
+    <header>
+        <nav>
+            <div class="navleft">
+        <div class="menuIcon">
+            <div class="container-menu-icon">
+                <img src="/images/MenuVector.png" alt="menuVector"/>
+            </div>
+            <div class="container-menu-list hidden-menu">
+                <h3>Shop</h3>
                 <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
                 <h3><a href="/Pages/artframes.html">Artframes</a></h3>
                 <h3><a href="/Pages/flowers.html">Flowers</a></h3>
                 <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
                 <h3><a href="/Pages/sales.html">SALE</a></h3>
-                <p>-----------</p>
-                <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
             </div>
         </div>
     </div>
-
-</div>
-
+    <div class="navcenter">
+        <div class="logo"><a href="/index.html">HO Studio</a></div>
     </div>
-    <script src="/main.jsx"></script>
+
+    
+    <div class="navright">
+        <div class="cartIcon">
+            <div class="container-cart-icon">
+                <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+            </div>
+        <div class="count-products">
+            <span id="contador-productos">0</span>
+        </div>
+        <div class="container-cart-products   hidden-cart">
+            <div class="row-product">
+            <div class="cart-product">
+                <div class="info-cart-product">
+                    <span class="cantidad-producto-carrito">Your</span>
+                    <p class ="titulo-producto-carrito">Cart</p>
+                    <span class="precio-producto-carrito">It's</span>
+                    <p>Empty</p>
+                </div>
+            </div>
+            </div>
+            <div class="cart-total">
+                <h3>Total</h3>
+                <span class="total-pagar">$0</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </nav>
+     </header>
+
+     <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe1.jpeg" alt="Artframe1">
+            </figure>
+            <div class="info-product">
+                <h2>Beauty in dark</h2>
+                <p>$150</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe2.jpeg"  alt= "Artframe2"/>
+            </figure>
+            <div class="info-product">
+                <h2>Pink Fenix</h2>
+                <p>$200</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe3.jpeg" alt="Artframe3">
+            </figure>
+            <div class="info-product">
+                <h2>Lost in City</h2>
+                <p>$50</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe4.jpeg" alt="Artframe4">
+            </figure>
+            <div class="info-product">
+                <h2>Pink Geisha</h2>
+                <p>$125</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe5.jpeg" alt="Artframe5">
+            </figure>
+            <div class="info-product">
+                <h2>Duck in Mud</h2>
+                <p>$50</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div><div class="item">
+            <figure>
+                <img src="/images/ArtframeProducts/Artframe6.jpeg" alt="Artframe6">
+            </figure>
+            <div class="info-product">
+                <h2>Mango Peach</h2>
+                <p>$70</p>
+                <button class="btn-add-cart">Add to cart</button>
+            </div>
+        </div>
+     </div>
+     <div class="rightcatalog">
+        <div class="rightFloatingBar">
+            <h3>Shop</h3>
+            <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+            <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+            <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+            <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+            <h3><a href="/Pages/sales.html">SALE</a></h3>
+            <p>-----------</p>
+            <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+        </div>
+    </div>
+    <script src="../components/cart.js"></script>
 </body>
 </html>

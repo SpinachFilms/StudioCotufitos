@@ -386,6 +386,9 @@ nav.scrolled{
     
   }
 
+  .hidden-menu{
+    display: none;
+  }
 
 @media(max-width: 1600px){
     
