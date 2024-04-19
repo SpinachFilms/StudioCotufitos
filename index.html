@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/catalog.css" />
     <link rel="spinachClothing" href="./spinachClothing.html" />
     <link rel="newArrivals" href="./newArrivals.html" />
     <link rel="artframes" href="./artframes.html" />
@@ -20,63 +20,57 @@
   <body>
     <header>
       <nav>
-        <div class="navleft">
-            <div class="menuIcon">
-                <img src="/images/MenuVector.png" alt="menuVector"/> 
-            </div>        
-            <div class="menuContainer">
-              <div class="closeIcon">
-                <img src="/images/CloseVector.png" alt="closeVector"/>
-              </div>  
-              <ul>
-              <li><a href="/Pages/newArrivals.html">Shop</a></li>
-              <li><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></li>
-              <li><a href="/Pages/artframes.html">Artframes</a></li>
-              <li><a href="/Pages/flowers.html">Flowers</a></li>
-              <li><a href="spinachClothing.html">Spinach Clothing</a></li>
-              <li><a href="/Pages/sales.html">SALE</a></li>
-              <li>-----------</li>
-              <li><a href="/Pages/login.html">LogIn/SingUp</a></li>
-              <li><a href="">Contact Us</a></li>
-              </ul>
-            </div>
-            
+          <div class="navleft">
+      <div class="menuIcon">
+          <div class="container-menu-icon">
+              <img src="/images/MenuVector.png" alt="menuVector"/>
           </div>
-        
-        <div class="navcenter">
-          <div class="logo">HO Studio</div>
-        </div>
-
-        <div class="navright">
-            <div class="cartIcon">
-                <img src="/images/CartVector.png" alt="CartVector"/>
-        </div>
-      </nav>
-    </header>
-
-    <!---End of Nav Bar-->
-    <div class="wrapper">
-      <div class="slide1">
-        <div class="left">
-          <h1>NEW ARRIVALS</h1>
-          <h2><a href="/Pages/newArrivals.html" class="btn">Shop Now</a></h2>
-        </div>
-
-        <div class="center">
-          <img src="../images/Artframes.png" alt="ProductBackground" />
-        </div>
-        <div class="rightFloatingBar">
-          <h3><a href="/Pages/newArrivals.html">Shop</a></h3>
-          <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
-          <h3><a href="/Pages/artframes.html">Artframes</a></h3>
-          <h3><a href="/Pages/flowers.html">Flowers</a></h3>
-          <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
-          <h3><a href="/Pages/sales.html">SALE</a></h3>
-          <p>-----------</p>
-          <img src="../images/PromoBanner.png" alt="BannerPromo" />
-        </div>
+          <div class="container-menu-list hidden-menu">
+              <h3>Shop</h3>
+              <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+              <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+              <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+              <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+              <h3><a href="/Pages/sales.html">SALE</a></h3>
+          </div>
       </div>
-    </div>
+  </div>
+  <div class="navcenter">
+      <div class="logo"><a href="/index.html">HO Studio</a></div>
+  </div>
+
+  
+  <div class="navright">
+      <div class="cartIcon">
+          <div class="container-cart-icon">
+              <img class="cartVector" src="/images/CartVector.png" alt="CartVector"/>
+      <div class="count-products">
+          <span id="contador-productos">0</span>
+      </div>
+          </div>
+      <div class="count-products">
+          <span id="contador-productos">0</span>
+      </div>
+      <div class="container-cart-products   hidden-cart">
+          <div class="row-product">
+          <div class="cart-product">
+              <div class="info-cart-product">
+                  <span class="cantidad-producto-carrito">Your</span>
+                  <p class ="titulo-producto-carrito">Cart</p>
+                  <span class="precio-producto-carrito">It's</span>
+                  <p>Empty</p>
+              </div>
+          </div>
+          </div>
+          <div class="cart-total">
+              <h3>Total</h3>
+              <span class="total-pagar">$0</span>
+          </div>
+      </div>
+      </div>
+  </div>
+  </nav>
+   </header>
 
     <!--End of the Slide1 section-->
 
@@ -117,6 +111,17 @@
         </h1>
       </div>
     </div>
+    <div class="rightFloatingBar">
+          <h3>Shop</h3>
+          <h3><a href="/Pages/newArrivals.html">NEW ARRIVALS</a></h3>
+          <h3><a href="/Pages/artframes.html">Artframes</a></h3>
+          <h3><a href="/Pages/flowers.html">Flowers</a></h3>
+          <h3><a href="spinachClothing.html">Spinach Clothing</a></h3>
+          <h3><a href="/Pages/sales.html">SALE</a></h3>
+          <p>-----------</p>
+          <img src="../images/PromoBanner.png" alt ='BannerPromo'/>
+      </div>
+  </div>
 
     <!--End of the Slide 3 section-->
     <footer>
@@ -149,13 +154,13 @@
           </ul>
         </div>
       </div>
-      <div class="copyright">
-        This website is being developed by iMsPinach 2024
-      </div>
+      
     </footer>
-
+    <div class="copyright">
+      This website is being developed by iMsPinach 2024
+    </div>
     <!--End of Footer-->
 
-    <script src="/main.jsx"></script>
+    <script src="/components/cart.js"></script>
   </body>
 </html>

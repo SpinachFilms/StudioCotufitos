@@ -206,17 +206,14 @@ nav.scrolled{
 .piedepagina{
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--grey-color);
     max-width: 70%;
     border-radius: 15px;
-    margin-left: 100px;
     margin-top: 50px;
     font-family: "Roboto";
     font-weight: 700;
-    width: 100%;
-    max-width: 70%;
-    
+        
 }
 
 .copyright{
