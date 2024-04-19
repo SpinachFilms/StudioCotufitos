@@ -23,7 +23,23 @@ a:hover{
     box-sizing: border-box;
 }
 
+h1{
+    font-size: 3vh;
+}
+
+img{
+    border-radius: 15px;
+    }
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     max-width: 1781px;
     font-family: "Roboto", sans-serif;
@@ -34,8 +50,7 @@ body {
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1vh 0px 50px 1vh ;
-    }
+   }
 
 nav{
         display: flex;
@@ -51,6 +66,12 @@ nav{
         background-color: var(--white-color);
         margin: 0px 0px 0px 5vh;   
         transition: all 500ms ease;
+}
+
+nav.scrolled{
+    background-color: var(--white-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    top: 0;
 }
     
 .nav .navleft {
@@ -74,14 +95,94 @@ nav{
     cursor: pointer;
 }
 
-    .rightFloatingBar{
-        
-        float:right;
-        overflow:visible ;
-        top: 10px;
+.rightFloatingBar{
+    position: fixed;
+    top: 15px;
+    right: 0;
+    width: 20%;
+    min-width: 200px;
+    z-index: 1000;
+    border-left: var(--black-color) 2px solid;
+    margin-top: 50px;
+    text-align: center;
+}
+
+    .slide2{
+        float:left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        gap: 50px;
+        max-width: 70%;
+        padding: 50px 50px 50px 50px;
+        height: auto;
+    }
+    
+    .divleft{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .divright{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .spinachClothing .img{
+        height: 100%;
         min-width: 200px;
-        border-left: var(--black-color) 2px solid;
+    }
+    
+    .flowers{
+        order: 1;
+        height: 100%;
+        min-width: 200px;
+        text-align: right;
+    }
+    
+    .SALE{
+        order:2;
+        height: 100%;
+        min-width: 200px;
+    }
+    
+    
+    .slide3{
+        float:left;
+        display: flex;
+        align-items: center;
+        color: -#D1D5DB;
+        font-family: "Roboto";
+        font-size: 26px;
+        font-weight: 700;
+        max-width: 50%;
+        padding: 50px 50px 50px 50px;
+        height: auto;
+    }
+    
+    .piedepagina{
+        float:left;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: var(--grey-color);
+        border-radius: 15px;
+        font-family: "Roboto";
+        font-weight: 700;
+        max-width:100%;
+        margin-left: 30vh;
+        padding: 30px 30px 30px 30px;
+        gap: 150px;
+        
+    }
+
+    
+    .copyright{
+        display: flex;
+        float:left;
         text-align: center;
+        margin-top: 30px;
+        margin-left: 50vh;       
     }
 
 .container-items{
@@ -90,7 +191,8 @@ nav{
     justify-content: center;
     align-content: center;
     float: left;
-    margin-left: 30vh;
+    margin-left: 20vh;
+    margin-top: 10vh;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     width: 100vh;
@@ -238,4 +340,70 @@ nav{
 
 .hidden-menu{
     display: none;
+}
+
+/* Styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav .navleft,
+    .nav .navright {
+        margin: 10px 0;
+    }
+
+    .slide2,
+    .slide3,
+    .piedepagina {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .container-items {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+        width: auto;
+    }
+
+    .rightFloatingBar {
+        width: 100%;
+        position: static;
+        border-left: none;
+        border-top: var(--black-color) 2px solid;
+        margin-top: 20px;
+    }
+
+    .copyright {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .container-items {
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        margin: 20px;
+    }
+
+    .rightFloatingBar {
+        width: 30%;
+    }
 }
