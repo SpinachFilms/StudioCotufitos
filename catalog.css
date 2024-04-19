@@ -355,15 +355,15 @@ nav.scrolled{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        position:absolute;
-        width: 80%;
+        position:fixed;
+        width: 100%;
         min-width: 200px;
         font-family: "Roboto";
         font-size: 24px;
         font-weight: 700;
         border-bottom: var(--black-color) 2px solid;
         background-color: var(--white-color);
-        margin: 0px 0px 0px 5vh;   
+        margin: 0px 0px 0px 0vh;   
         transition: all 500ms ease;
 }
 .container-items{
